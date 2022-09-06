@@ -1,0 +1,248 @@
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --accent-color: #2196f3;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header {
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+.logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.logo-span {
+  color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.link.current {
+  color: var(--accent-color);
+}
+
+.link {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.auth-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-link:hover,
+.auth-link:focus {
+  color: #2196f3;
+}
+
+/* Hero section */
+.hero {
+  background-color: var(--primary-title-color);
+}
+.hero-title {
+  color: var(--primary-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.btn {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.btn:hover,
+.btn:focus {
+  color: #188ce8;
+}
+/* Skills section */
+.skills {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.skills-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* What do we do? */
+.works-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Our team */
+.team {
+  background-color: var(--secondary-background-color);
+}
+.team-list {
+  list-style: none;
+}
+.team-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-names {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.189;
+  letter-spacing: 0.03em;
+}
+.team-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+/*Contacts */
+.contacts {
+  background-color: #2f303a;
+}
+.contacts-logo {
+  color: var(--primary-background-color);
+  font-family: "Raleway";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.contacts-list {
+  list-style: none;
+}
+.contacts-addres {
+  color: var(--primary-background-color);
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contacts-mail,
+.contacts-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contacts-addres:hover,
+.contacts-mail:hover,
+.contacts-tel:hover,
+.contacts-addres:focus,
+.contacts-mail:focus,
+.contacts-tel:focus {
+  color: var(--accent-color);
+}
+/* Portfolio */
+
+.button {
+  cursor: pointer;
+  color: var(--primary-title-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: transparent;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+.projects-title {
+  color: var(--primary-title-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects-link {
+  text-decoration: none;
+}
+.projects-text {
+  color: var(--primary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
