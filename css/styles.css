@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-background-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 h1,
 h2,
@@ -21,6 +25,11 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 .container {
   margin-left: auto;
@@ -187,7 +196,7 @@ p {
 }
 /* What do we do? */
 .works {
-  padding-bottom: 94px;
+  padding-top: 0;
   text-align: center;
 }
 .works-title {
@@ -374,35 +383,31 @@ p {
   margin-bottom: 34px;
   margin-top: 0px;
   padding-left: 0px;
-  padding-top: 94px;
   display: flex;
   justify-content: center;
   list-style: none;
 }
-.list .elements {
-  width: 370px;
-  border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.elements:nth-child(3n) {
-  margin-right: 0px;
-}
+
 .projects .list {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-bottom: 94px;
-  padding-left: 0px;
+  padding: 0;
+  margin: 0;
+
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.list .elements {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 .projects-link {
   text-decoration: none;
 }
 
 .projects-text {
-  padding-bottom: 20px;
-
   color: var(--primary-text-color);
   font-family: "Roboto";
   font-style: normal;
@@ -411,10 +416,8 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-.image-elements {
-  padding-bottom: 20px;
-}
-.projects-title,
-.projects-text {
-  padding-left: 24px;
+
+.cards {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
 }
