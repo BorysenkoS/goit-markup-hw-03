@@ -328,9 +328,23 @@ p {
 }
 
 /* Portfolio */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.list-button .item-button + .item-button {
+  margin-left: 8px;
+}
 .button {
+  height: 38px;
+  min-width: 73px;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: var(--secondary-background-color);
   color: var(--primary-title-color);
   cursor: pointer;
+  text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -356,11 +370,39 @@ p {
   letter-spacing: 0.06em;
 }
 
+.list-button {
+  margin-bottom: 34px;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-top: 94px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.list .elements {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.elements:nth-child(3n) {
+  margin-right: 0px;
+}
+.projects .list {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 94px;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .projects-link {
   text-decoration: none;
 }
 
 .projects-text {
+  padding-bottom: 20px;
+
   color: var(--primary-text-color);
   font-family: "Roboto";
   font-style: normal;
@@ -368,4 +410,11 @@ p {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+.image-elements {
+  padding-bottom: 20px;
+}
+.projects-title,
+.projects-text {
+  padding-left: 24px;
 }
